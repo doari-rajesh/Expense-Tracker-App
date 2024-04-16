@@ -7,12 +7,6 @@ const Product = (props) => {
   const products = props.products;
   return (
     <Card className="product">
-      {/* <ProductItem
-        title={props.products[0].title}
-        amount={props.products[0].amount}
-        date={props.products[0].date}
-      /> */}
-
       {products.map((item) => (
         <ProductItem
           key={item.id}

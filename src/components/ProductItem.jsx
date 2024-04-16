@@ -6,10 +6,7 @@ const ProductItem = ({ ...props }) => {
   console.log("card rendered");
 
   const [title, setTitle] = useState(props.title);
-  const changeHandler = () => {
-    console.log("clicked");
-    setTitle("popcorn");
-  };
+  const changeHandler = () => {};
   return (
     <Card className="product-item">
       <ProductDate date={props.date} />
