@@ -6,10 +6,10 @@ const Product = (props) => {
   console.log("product rendered");
   const products = props.products;
   return (
-    <Card className="product">
-      {products.map((item) => (
+    <Card className="products">
+      {products.map((item, index) => (
         <ProductItem
-          key={item.id}
+          key={index}
           title={item.title}
           amount={item.amount}
           date={item.date}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProductDate.css";
 
 const ProductDate = (props) => {
   console.log("product-date rendered");

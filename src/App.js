@@ -1,9 +1,11 @@
+import { useState } from "react";
 import "./App.css";
+import NewProduct from "./components/NewProduct";
 import Product from "./components/Product";
 
 function App() {
   console.log("app rendered");
-  const products = [
+  const data = [
     {
       id: "p1",
       title: "Nirma",
@@ -29,8 +31,18 @@ function App() {
       date: new Date(2021, 5, 5),
     },
   ];
+
+  const [products, setProducts] = useState(data);
+
+  const newProduct = (newProduct) => {
+    console.log(newProduct);
+    setProducts((prev) => {
+      return [...prev, newProduct];
+    });
+  };
   return (
-    <div>
+    <div className="App">
+      <NewProduct newProduct={newProduct} />
       <Product products={products} />
     </div>
   );
