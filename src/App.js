@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./App.css";
 import NewProduct from "./components/NewProduct";
 import Product from "./components/Product";
+import "./App.css";
 
 function App() {
   console.log("app rendered");
