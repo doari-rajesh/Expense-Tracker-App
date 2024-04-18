@@ -6,7 +6,7 @@ const NewProduct = ({ newProduct }) => {
     newProduct(product);
   };
   return (
-    <div>
+    <div className="new-product-form">
       <ProductForm productData={product} />
     </div>
   );
