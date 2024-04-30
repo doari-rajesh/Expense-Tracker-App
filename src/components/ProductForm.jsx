@@ -4,16 +4,16 @@ import "./ProductForm.css";
 const ProductForm = ({ productData }) => {
   const [newTitle, setTitle] = useState("");
   const [newDate, setDate] = useState("");
-  console.log("title", newTitle);
-  console.log("Date", newDate);
+  // console.log("title", newTitle);
+  // console.log("Date", newDate);
   const handleChangeTitle = (e) => {
-    console.log("newTitle:", newTitle);
-    console.log(e.target.value);
+    // console.log("newTitle:", newTitle);
+    // console.log(e.target.value);
     setTitle(e.target.value);
   };
   const handleChangeDate = (e) => {
-    console.log("newDate:", newDate);
-    console.log(e.target.value);
+    // console.log("newDate:", newDate);
+    // console.log(e.target.value);
     setDate(e.target.value);
   };
   const handleSubmit = (e) => {

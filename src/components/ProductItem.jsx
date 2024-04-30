@@ -4,10 +4,10 @@ import Card from "./Card";
 import "./ProductItem.css";
 
 const ProductItem = ({ title, amount, date }) => {
-  console.log("product-item rendered");
+  // console.log("product-item rendered");
 
   const [brand, setBrand] = useState(title);
-  console.log("brand", brand);
+  // console.log("brand", brand);
   const changeHandler = () => {
     setBrand("popcorn");
   };

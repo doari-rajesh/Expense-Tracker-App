@@ -4,7 +4,7 @@ import Product from "./components/Product";
 import "./App.css";
 
 function App() {
-  console.log("app rendered");
+  // console.log("App rendered");
   const data = [
     {
       id: "p1",

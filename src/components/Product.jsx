@@ -3,7 +3,7 @@ import ProductItem from "./ProductItem";
 import Card from "./Card";
 
 const Product = (props) => {
-  console.log("product rendered");
+  // console.log("product rendered");
   const products = props.products;
   return (
     <Card className="products">
